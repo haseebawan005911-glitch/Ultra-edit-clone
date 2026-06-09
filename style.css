@@ -24,7 +24,7 @@
 nav {
 
     border: 1px solid #d7d7d7;
-    height: 6vw;
+    min-height: 80px;
     /* margin: 9px; */
     margin: 9px 20px;
     display: flex;
@@ -388,7 +388,7 @@ button {
     align-items: flex-start;
     /* gap: 20px; */
     border: 2px none;
-    height: 44vw;
+    height:auto;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 8px;
@@ -500,7 +500,7 @@ button {
     justify-content: space-between;
     gap: 20px;
     border: 2px none;
-    height: 42vw;
+    height: auto;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 8px;
@@ -557,7 +557,7 @@ button {
     justify-content: space-between;
     gap: 20px;
     border: 2px none;
-    height: 42vw;
+    height: auto;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 8px;
@@ -749,13 +749,14 @@ button {
 }
 
 .newsletter button {
-   padding: 4px 10px;
+    padding: 4px 10px;
     margin-left: 78px;
     background-color: #facc15;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     border: none;
+    margin-top: 8px;
 }
 
 .newsletter button:hover {
@@ -771,9 +772,94 @@ button {
 
 .stayupdate {
     color: #4d4f4d;
-    
+
 }
-.input{
-        padding: 6px;
-  background-color: #3b3b3b;
+
+.input {
+    padding: 6px;
+    background-color: #3b3b3b;
+}
+
+
+@media screen and (max-width:768px) {
+    nav{
+        height: auto;
+        margin: 5px;
+        padding: 8px;
+    }
+
+    nav img{
+        height: 40px;
+        padding-right: 15px;
+    }
+
+    nav ul li{
+        padding: 8px;
+        font-size: 10px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .slider {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .slider img {
+        width: 100%;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .section3,
+    .section4,
+    .section5 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidepic,
+    .left img,
+    .rightpic {
+        width: 100%;
+        height: auto;
+    }
+
+    .logopara,
+    .idp,
+    .topp {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .Cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .copy {
+        text-align: center;
+    }
 }
