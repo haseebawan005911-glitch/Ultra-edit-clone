@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .uppernav {
@@ -78,6 +79,7 @@ li svg {
     cursor: pointer;
     font-size: medium;
     margin-right: 17px;
+    display: none;
 }
 
 .secondbutton {
@@ -86,6 +88,7 @@ li svg {
     border: none;
     padding: 10px;
     border-radius: 5px;
+    display: none;
 
 }
 
@@ -160,6 +163,7 @@ main div h1 {
     vertical-align: sub;
     margin-left: 28px;
     cursor: pointer;
+    display: none;
 }
 
 .top-button button {
@@ -693,7 +697,7 @@ button {
 
 .back-footer {
     background-color: rgb(242, 240, 236);
-    height: 90vh;
+    height: auto;
     padding: 40px 20px;
 }
 
@@ -703,7 +707,7 @@ button {
     justify-content: space-between;
     gap: 42px;
     border: none;
-    height: 72vh;
+    height: auto;
     width: 92vw;
     background-color: #232323;
     border-radius: 10px;
@@ -781,11 +785,11 @@ button {
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:400px) {
     nav{
         height: auto;
         margin: 5px;
-        padding: 8px;
+        padding: 10px;
     }
 
     nav img{
@@ -794,8 +798,8 @@ button {
     }
 
     nav ul li{
-        padding: 8px;
-        font-size: 10px;
+        padding: 4px;
+        font-size: 8px;
     }
     .container {
         flex-direction: column;
@@ -855,8 +859,12 @@ button {
     }
 
     .main-footer {
-        flex-direction: column;
+          flex-direction: column;
+        gap: 20px;
         height: auto;
+    }
+     .footer-col{
+        min-width: 100%;
     }
 
     .copy {
