@@ -34,6 +34,7 @@ nav {
     position: sticky;
     top: 40px;
     z-index: 999;
+   
 }
 
 nav img {
@@ -789,18 +790,35 @@ button {
     nav{
         height: auto;
         margin: 5px;
-        padding: 10px;
+        padding: 8px;
+        align-items: center;
     }
 
     nav img{
         height: 40px;
-        padding-right: 15px;
+        padding-right: 10px;
     }
 
     nav ul li{
         padding: 4px;
         font-size: 8px;
     }
+
+.firstbutton{
+    margin: 0 5px;
+    padding: 8px 14px;
+    font-size: 11px;
+}
+
+.secondbutton{
+    margin: 0;
+    padding: 8px 10px;
+    font-size: 11px;
+}
+
+.search{
+    margin-left: 8px;
+}
     .container {
         flex-direction: column;
         align-items: center;
@@ -823,10 +841,27 @@ button {
 
     .box {
         width: 90%;
-        margin: auto;
+        margin:20px auto;
         height: auto;
         margin-bottom: 20px;
+        padding: 15px;
     }
+   .box h3{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.box p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.box a{
+    font-size: 14px;
+}
+.box img{
+    width: 25px;
+}
 
     .section3,
     .section4,
